@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/FilmReview/static/css/main.e734a068.css",
-    "main.js": "/FilmReview/static/js/main.e4452212.js",
+    "main.css": "/FilmReview/static/css/main.a89de58e.css",
+    "main.js": "/FilmReview/static/js/main.cd6c2c9b.js",
     "static/js/787.bc7d429a.chunk.js": "/FilmReview/static/js/787.bc7d429a.chunk.js",
     "static/media/clapperboard.jpg": "/FilmReview/static/media/clapperboard.37944115f46766b1ba26.jpg",
     "index.html": "/FilmReview/index.html",
-    "main.e734a068.css.map": "/FilmReview/static/css/main.e734a068.css.map",
-    "main.e4452212.js.map": "/FilmReview/static/js/main.e4452212.js.map",
+    "main.a89de58e.css.map": "/FilmReview/static/css/main.a89de58e.css.map",
+    "main.cd6c2c9b.js.map": "/FilmReview/static/js/main.cd6c2c9b.js.map",
     "787.bc7d429a.chunk.js.map": "/FilmReview/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e734a068.css",
-    "static/js/main.e4452212.js"
+    "static/css/main.a89de58e.css",
+    "static/js/main.cd6c2c9b.js"
   ]
 }
