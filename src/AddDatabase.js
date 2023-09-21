@@ -3,7 +3,6 @@ import { getDatabase, ref, push, set } from 'firebase/database';
 import { initializeApp } from 'firebase/app';
 import './Table.css';
 
-// Your Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAIkUADPFKXDvI_O03zYzBh4xMggOojygI",
     authDomain: "movie-reviewer-bd3b4.firebaseapp.com",
@@ -15,7 +14,6 @@ const firebaseConfig = {
     measurementId: "G-VG6MM891KN"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
@@ -28,26 +26,26 @@ function AddDatabase() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!title || !date || !adamRating || !kiaRating) {
+    if (!title ||  !date || !adamRating || !kiaRating) {
         alert('Please fill in all fields before submitting.');
         return;
       }
 
-    // Call the addMovie function to add a new movie record
+   
     addMovieToDatabase(title, date, adamRating, kiaRating);
 
-    // Clear the form fields
     setTitle('');
     setDate('');
     setAdamRating('');
     setKiaRating('');
+
+    window.location.reload();
   };
 
   const addMovieToDatabase = (title, date, adamRating, kiaRating) => {
-    const moviesRef = ref(database, 'movies'); // Replace 'movies' with your database reference
-    const newMovieRef = push(moviesRef); // Generate a unique ID for the new record
+    const moviesRef = ref(database, 'movies'); 
+    const newMovieRef = push(moviesRef);
 
-    // Define the movie data
     const movieData = {
       title: title,
       date: date,
@@ -55,7 +53,6 @@ function AddDatabase() {
       KiaRat: kiaRating
     };
 
-    // Add the movie data to the database
     set(newMovieRef, movieData)
       .then(() => {
         console.log('Movie added successfully.');
@@ -67,12 +64,12 @@ function AddDatabase() {
 
   return (
     <div className='AddTable'>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
-        <input type="text" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
-        <input type="text" placeholder="Adam Rating" value={adamRating} onChange={(e) => setAdamRating(e.target.value)} />
-        <input type="text" placeholder="Kia Rating" value={kiaRating} onChange={(e) => setKiaRating(e.target.value)} />
-        <button type="submit">Add Movie</button>
+      <form className='movie-form' onSubmit={handleSubmit}>
+        <input className='form-input' type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input className='form-input' type="text" placeholder="Date dd/mm/yyyy" value={date} onChange={(e) => setDate(e.target.value)} />
+        <input className='form-input' type="text" placeholder="Adam Rating" value={adamRating} onChange={(e) => setAdamRating(e.target.value)} />
+        <input className='form-input' type="text" placeholder="Kia Rating" value={kiaRating} onChange={(e) => setKiaRating(e.target.value)} />
+        <button className='submit-button' type="submit">Add Movie</button>
       </form>
     </div>
   );

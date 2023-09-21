@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Adam and Kia Movie Review</h1>
       </header>
       <ShowDatabase />
       <AddDatabase />
