@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/FilmReview/static/css/main.d245d10d.css",
-    "main.js": "/FilmReview/static/js/main.c5215928.js",
+    "main.js": "/FilmReview/static/js/main.c368dcf8.js",
     "static/js/787.bc7d429a.chunk.js": "/FilmReview/static/js/787.bc7d429a.chunk.js",
     "static/media/clapperboard.jpg": "/FilmReview/static/media/clapperboard.05cc8b6870cafb037ec1.jpg",
     "index.html": "/FilmReview/index.html",
     "main.d245d10d.css.map": "/FilmReview/static/css/main.d245d10d.css.map",
-    "main.c5215928.js.map": "/FilmReview/static/js/main.c5215928.js.map",
+    "main.c368dcf8.js.map": "/FilmReview/static/js/main.c368dcf8.js.map",
     "787.bc7d429a.chunk.js.map": "/FilmReview/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d245d10d.css",
-    "static/js/main.c5215928.js"
+    "static/js/main.c368dcf8.js"
   ]
 }
